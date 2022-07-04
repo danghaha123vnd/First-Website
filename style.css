@@ -1,0 +1,575 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.clear
+{
+    clear:both;
+}
+.text_white
+{
+    color: #fff;
+}
+#header
+{
+    height: 46.5px;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+#nav
+{
+    display: inline-block;
+}
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav > li > a{
+    color: #fff;
+}
+#nav li a{ 
+    text-decoration: none;
+    padding: 0px 24px;
+    line-height: 46.5px;
+    display: inline-block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover
+{
+    color: black;
+    background-color: #ccc;
+}
+#nav li:hover .subnav
+{
+    display: block;
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 14px;
+    line-height: 38.5px;
+}
+#nav .subnav li{
+    display: block;
+}
+#nav .icondown
+{
+    font-size: 13px;
+}
+#nav .subnav
+{
+    top:100%;
+    left: 0;
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#header .btn
+{
+    cursor: pointer;
+    float: right;
+    display: block;
+    box-decoration-break:slice;
+    height: 46.5px;
+    width: 60px;
+    padding: 0 21px;
+    line-height: 46.5px;
+}
+#header .btn:hover
+{
+    background-color: #f44336;
+}
+#header .search-icon
+{
+    font-size: 17px;
+    color: #fff;
+}
+#slider
+{
+    position: relative;
+    padding-top: 50%;
+    background: url("./Assets/Img/chicago.jpg") top center / cover no-repeat;
+}
+#slider .text
+{
+    position: absolute;
+    color: #fff;
+    bottom: 59px;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+#slider .text_head
+{
+    font-weight: 300px;
+    margin-bottom: 25px;
+}
+#contain .section_heading
+{
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+#contain
+{
+    display: block;
+}
+#contain .heading
+{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+    font-weight:lighter;
+    margin-left: 0;
+    margin-right: 0;
+}    
+#contain .subheading
+{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+#contain .about
+{
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 48px;
+}
+#contain .memberitem
+{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+#contain .memberlist
+{
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+#contain .memberitem .memberitem
+{
+    width: 154px;
+}
+#contain .member
+{
+    width: 154px;
+    border-radius: 5px;
+}
+#contain .name
+{
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+#contain #content .section_tour
+{
+    background-color: black;
+    padding: 74px;
+    display: block;
+}
+#contain #content .section_tour .heading
+{
+    margin-top: 25px;
+}
+.section_tour .ticketlist
+{
+    background-color: #fff;
+    margin-top: 40px;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section_tour .ticketlist li
+{
+    font-size: 15px;
+    padding: 11px 16px;
+    color: rgb(117, 117, 117);
+    list-style-type: none;
+    border:solid 1px rgb(221, 221, 221);
+}
+.section_tour .ticketlist .sold-out
+{
+    background-color: rgb(244, 67, 54);
+    padding:  3px 4px;
+    margin-left: 16px;
+    color: #fff;
+}
+.section_tour .ticketlist .quatity
+{
+    background-color: black;
+    color: #fff;
+    float: right;
+    line-height: 22.5px;
+    display: block;
+    text-align: justify;
+    border-radius: 50%;
+    text-align: center;
+    width: 24.7px;
+    /* padding-left: 16px; */
+    margin-right: 10px;
+}
+.section_tour .placelist 
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 468.77px;
+
+}
+.section_tour .placelist .img:hover
+{
+    filter: brightness(60%);
+}
+.section_tour .placelist .img
+{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.section_tour .placelist .placeitem
+{
+    background-color: #fff ;
+    width: 245.328px ;
+    height: 388.766px;
+    margin-top: 32px;
+    margin-left: 16px;
+    float: left;
+    display: block;
+    border-radius: 12px;
+}
+.section_tour .placelist .bodyplace
+{
+    padding: 0.5px 16px;
+}
+.section_tour .timeplace
+{
+    opacity: 0.6;
+    margin: 15px 0;
+}
+.section_tour .namecity
+{
+    margin: 15px 0;
+}
+.section_tour .aboutplace
+{
+    display: block;
+    margin: 15px 0;
+    margin-bottom: 20px;
+}
+.section_tour .placelist .placeitem .btnplace
+{
+    text-decoration: none;
+    /* width: 75.7px;
+    height: 22.5px; */
+    font-size: 15px;
+    background-color: black;
+    color: #fff;
+    padding:  12px 16px;
+    text-align: center;
+    border-radius: 8px;
+    box-sizing: unset;
+    border-bottom: 15px;
+    margin-left: 35px;
+    border: unset;
+    cursor: pointer;
+}
+.section_tour .placelist .placeitem .btnplace:hover
+{
+    background-color: #ccc !important;
+    color: black;
+    box-shadow: 0 0 5px #ccc;
+}
+.section_contact .heading
+{
+    margin-top: 74px;
+}
+.section_contact .containcon 
+{
+    display: block;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    margin-top: 47px;
+    font-weight: 510;
+    height: 250px;
+}
+.section_contact .inputloca
+{
+    display: inline-block;
+    width: 400px;
+    margin: unset;
+}
+.section_contact i[class*="ti-"]
+{
+    width: 30px;
+    display: inline-block;
+}
+.section_contact .inputloca 
+{
+    font-family: "Lato", sans-serif;
+    line-height: 30px;
+    text-size-adjust: 100%;
+}
+.section_contact .ti-email
+{
+    border-left: px;
+}
+.section_contact .formin
+{
+    float: right;
+}
+.section_contact .fillloca
+{
+        width: 400px;
+        height: 89px;
+        display: block;
+        /* float: right; */
+        outline: black;
+}
+.section_contact .fillloca .fill
+{
+    height: 40.5px;
+    width: 191.51px;
+    border: solid #ccc 1px;
+    padding: 0 8px;
+    margin:  5px 3px;
+}
+.section_contact .fillloca .messe
+{
+    height: 40.5px;
+    width: 394px;
+    border: solid #ccc 1px;
+    margin: 5px 3px;
+    padding: 0 9px;
+}
+.section_contact .sendloca
+{
+    display: block;
+    float: right;
+    margin-top: 16px;
+    width: 71.3px;
+    height: 38.5px;
+    background-color: black;
+    color: #fff;
+    border: unset;
+    cursor: pointer;
+    margin-right: 3px;
+}
+.section_contact .sendloca:hover
+{
+    background-color:  #ccc;
+    color: black;
+}
+
+#footer .footerend
+{
+    height: 180.5px;
+    background-color: #fff;
+    display: block;
+}
+#footer .footerend .contact  
+{
+    /* align-items: center;
+    text-align: center;
+    line-height: 216.5px;
+    font-size: 25px; */
+    display: block;
+    text-align: center;
+    margin-top: 90px;
+    color:  black;
+    opacity: 0.8;
+    font-style: italic;
+}
+#footer .footerend .contact .ico a
+{
+    text-decoration: none;
+    opacity: 0.9;
+}
+#footer .footerend .contact a
+{
+    color:  black;
+    opacity: 0.8;
+}
+#footer .footerend .ico
+{
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+.modal
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal.open
+{
+    display: flex;
+}
+.modal.close
+{
+    display: none;
+}
+.mod-contain .iconbag
+{
+    margin-right: 16px;
+}
+.mod-contain
+{
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    border-radius: 3px;
+    max-width: calc(100%-32px);
+    animation: Transition ease 0.4s;
+}
+.mod-contain .mod-header
+{
+    background-color: rgb(0, 150, 136);
+    height: 129px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 5px;
+    letter-spacing: 4px;
+}
+.mod-contain .head-close
+{
+    position: absolute;
+    padding: 12px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: #fff;
+}
+.mod-contain .head-close:hover
+{
+    background-color: #ccc;
+    border-radius: 4px;
+}
+.mod-contain .mod-label
+{
+    display: block;
+    font-size: 15px;
+    padding:  5px;
+    text-size-adjust: 100%;
+}
+.mod-contain .mo-input
+{
+    border: solid 1px #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.mod-contain .m-body
+{
+    padding: 16px;
+}
+.mod-contain .buyticket
+{
+    width: 868px;
+    height: 54.5px;
+    background-color: #009688 !important;
+    color: #fff;
+    cursor: pointer;
+    border:unset;
+    border-radius: 5px;
+}
+.mod-contain .buyticket:hover
+{
+    background-color: #ccc !important ;
+    color:  black !important;
+}
+.mod-contain .mod-footer .mod-help
+{
+    padding: 16px;
+    /* text-align: right ; */
+    float: right;
+}
+.mod-footer a
+{
+    color: #2196F3 !important;
+}
+.mod-footer .mod-Cl
+{
+    width: 83.5px;
+    height: 38.5px;
+    background-color: rgb(244, 67, 54);
+    margin: 16px;
+    margin-top: 8px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.mod-footer .mod-Cl .mod-c
+{
+    display: inline-block;
+    line-height: 38.5px;
+    padding-left: 12px;
+
+    color: #fff;
+}
+.mod-footer .mod-Cl .ti-close
+{
+    font-size: 10px;
+    color: #fff;
+    
+}
+.mod-footer .mod-Cl:hover,
+.mod-footer .mod-Cl:hover .mod-c,
+.mod-footer .mod-Cl:hover .ti-close
+{
+    color: black;
+    background-color: #ccc;
+}
+
+.mod-footer .footclose
+{
+    display: inline-block;
+}
+@keyframes Transition
+{
+    from
+    {
+        opacity: 0.2;
+        transform: translateY(-200px) ;
+    }
+    to 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
