@@ -97,8 +97,6 @@ html
 #slider
 {
     position: relative;
-    padding-top: 50%;
-    background: url("./Assets/Img/chicago.jpg") top center / cover no-repeat;
 }
 #slider .text
 {
